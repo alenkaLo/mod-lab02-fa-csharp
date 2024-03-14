@@ -54,7 +54,7 @@ namespace fans {
     }
     public bool? Run(IEnumerable<char> s) {
         State current = InitialState;
-        foreach (var c in s) // цикл по всем символам {
+        foreach (var c in s) {
             current = current.Transitions[c]; // меняем состояние на то, в которое у нас переход
             if (current == null)              // если его нет, возвращаем признак ошибки
                 return null;
@@ -99,7 +99,7 @@ namespace fans {
     
     public bool? Run(IEnumerable<char> s) {
         State current = InitialState;
-        foreach (var c in s) // цикл по всем символам {
+        foreach (var c in s) {
             current = current.Transitions[c]; // меняем состояние на то, в которое у нас переход
             if (current == null)              // если его нет, возвращаем признак ошибки
                 return null;
@@ -137,7 +137,7 @@ namespace fans {
     
     public bool? Run(IEnumerable<char> s) {
         State current = InitialState;
-        foreach (var c in s) // цикл по всем символам {
+        foreach (var c in s) {
             current = current.Transitions[c]; // меняем состояние на то, в которое у нас переход
             if (current == null)              // если его нет, возвращаем признак ошибки
                 return null;
